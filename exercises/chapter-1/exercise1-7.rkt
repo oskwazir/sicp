@@ -28,9 +28,7 @@ Does this work better for small and large numbers?
   (< (abs (- (square guess) x )) 0.001))
 
 ;for better-than-good-enough we need to compare current guess to previous guess
-; and see if it has changed much as a percentage? Or how?
-
-
+; and see if it has changed enough to warrant guessing again
 
 (define (abs x)
   (cond ((< x 0) (- x))
